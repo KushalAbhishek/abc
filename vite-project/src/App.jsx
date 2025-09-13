@@ -3,14 +3,14 @@ import "./App.css"
 
   function App() {
 
-    const handleClick=()=>{
-      alert("button pressed by")
+    const handleClick=(name)=>{
+      alert("button pressed by "+ name)
     }
 
     return (
       <div>
         <p>This is a Button</p>
-      <button onClick={handleClick}>Button</button>
+      <button onClick={()=>handleClick("Abhishek")}>Button</button>
       </div>
   
     )
