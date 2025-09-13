@@ -1,9 +1,9 @@
 .cart {
-  border: 2px solid red;
+  
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-content: center;
-  padding: 20%;
+  padding: 10%;
 }
 
 .c2 {
