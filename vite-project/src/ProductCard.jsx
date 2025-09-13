@@ -1,10 +1,15 @@
+import "./ProductCard.css"
+
 function ProductCard({recievedName,price,isAvailable}){
    
   return (
-    <div>
-      <p>Product : {recievedName}</p>
-      <p>price : {price}</p>
-      <p>{isAvailable===true?"In stock":"Out of Stock"}</p>
+    <div className="main">
+      <p className="na">Product : {recievedName}</p>
+      <p className="pi">price : {price}</p>
+      <p style={{ color: isAvailable ? "green" : "red" }}>
+        {isAvailable ? "In stock" : "Out of Stock"}
+      </p>
+
     </div>
   )
 }

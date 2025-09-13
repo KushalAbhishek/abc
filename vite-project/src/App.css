@@ -1,0 +1,26 @@
+.cart {
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 20%;
+}
+
+.c2 {
+  margin-left: 50px;
+}
+
+.pro1 {
+  padding: px;
+}
+.pro2 {
+  margin-left: 50px;
+ 
+}
+
+.iD {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}

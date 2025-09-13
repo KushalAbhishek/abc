@@ -1,0 +1,25 @@
+.na {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.pi {
+  color: blue;
+}
+
+.main {
+  text-align: center;
+  border: 2px solid grey;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.in-stock {
+  color: green;
+  font-weight: bold;
+}
+
+.out-of-stock {
+  color: red;
+  font-weight: bold;
+}

@@ -1,0 +1,16 @@
+
+
+.ID {
+  border: 2px solid blue;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.vite {
+  display: flex;
+  border: 0.5px solid grey;
+  border-radius: 10px;
+  justify-content: center;
+  
+}
