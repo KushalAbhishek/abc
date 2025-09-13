@@ -1,5 +1,6 @@
 import Profile from "./Profile.jsx"
 import ProductCard from "./ProductCard.jsx"
+import Greeting from "./Greeting.jsx"
 
 function App() {
   const name = "Abhi";
@@ -13,6 +14,7 @@ function App() {
     <>
     <Profile />
     <ProductCard recievedName={productName} price={10000} isAvailable={true}/>
+    <Greeting recievedName={name} />
       
     </>
   )
