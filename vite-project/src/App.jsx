@@ -7,6 +7,10 @@ import "./App.css"
     const [email,setEmail]=useState("")
     const [password,setPassword]=useState("")
     
+    const [formData,setFormData]=useState({
+      email:"",
+      password:""
+    })
 
     /* const handleClick=(name)=>{
       alert("button pressed by "+ name)
@@ -14,13 +18,17 @@ import "./App.css"
 
     const handleChange=(event)=>{
       //event.preventDefault(); //prevents the website from refreshing immediately
-      console.log(event.target.name);//for form
-      console.log(event.target.value)
+     /*  console.log(event.target.name);//for form
+      console.log(event.target.value) */
+      setFormData({
+        ...formData,
+        [event.target.name]:event.target.value
+      })
     }
 
     const handleSumbit=()=>{
       event.preventDefault();
-      alert(`Email: ${email} \nPassword: ${password} \nYou have submitted`);//for form
+      alert(`Email: ${formData.email} \nPassword: ${formData.password} \nYou have submitted`);//for form
     }
 
     //to store the states of the enter text we use handleemail and handlepassword
@@ -29,7 +37,7 @@ import "./App.css"
     }
 
     const handlePassword=(event)=>{
-      setEmail(event.target.value)
+      setPassword(event.target.value)
     }
 
     /* const handleIncrement=()=>{
@@ -42,9 +50,9 @@ import "./App.css"
         {/* <p>{count}</p>
         <button onClick={handleIncrement}>Increment</button> */}
         <form onSubmit={handleSumbit}>
-          <input type="text" name="email" placeholder="Enter email" onChange={handleEmail}/>
+          <input type="text" name="email" placeholder="Enter email" onChange={handleChange}/>
           <input type="password" name="password" placeholder="Enter password" 
-          onChange={handlePassword}/>
+          onChange={handleChange}/>
           <button type="submit">Login</button>
         </form> 
       </div>
